@@ -1,0 +1,40 @@
+{
+  "HomePage": {
+    "title": "Hello world!",
+    "about": "Go to the about page"
+  },
+  "Manifest": {
+    "name": "My App",
+    "description": "This is a sample app",
+    "version": "1.0.0",
+    "author": "Your Name",
+    "license": "MIT",
+    "homepage": "https://example.com",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/yourusername/myapp.git"
+    }
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, ur {ur URDU} en {🇺🇸 English} other {Unknown}}"
+  },
+  "Navigation": {
+    "home": "Home",
+    "pathnames": "Pathnames"
+  },
+  "Aboutus": {
+    "title": "About us",
+    "description": "This is the about page of the app. It contains information about the app and its features."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist.",
+    "back": "Go back to the home page"
+  },
+  "error": {
+    "title": "Error",
+    "description": "An error occurred while processing your request.",
+    "back": "Go back to the home page"
+  }
+}

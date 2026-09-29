@@ -1,0 +1,40 @@
+{
+    "HomePage": {
+      "title": "ہیلو دنیا!",
+      "about": "کے بارے میں صفحے پر جائیں"
+    },
+    "Manifest": {
+      "name": "میری ایپ",
+      "description": "یہ ایک نمونہ ایپ ہے",
+      "version": "1.0.0",
+      "author": "اپنا نام",
+      "license": "MIT",
+      "homepage": "https://example.com",
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/user/repo"
+      }
+    },
+    "LocaleSwitcher": {
+      "label": "Change language",
+      "locale": "{locale, select, ur {ur URDU} en {🇺🇸 English} other {Unknown}}"
+    },
+    "Navigation": {
+      "home": "Home",
+      "pathnames": "Pathnames"
+    },
+    "Aboutus": {
+      "title": "ہمارے بارے میں",
+      "description": "یہ ایپ کا بارے میں صفحہ ہے۔ اس میں ایپ اور اس کی خصوصیات کے بارے میں معلومات شامل ہیں۔"
+    },
+    "notFound": {
+      "title": "صفحہ نہیں ملا",
+      "description": "جس صفحے کی آپ تلاش کر رہے ہیں وہ موجود نہیں ہے۔",
+      "back": "پیچھے جائیں"
+    },
+    "error": {
+      "title": "غلطی",
+      "description": "آپ کی درخواست کو پروسیس کرتے وقت ایک غلطی ہوئی۔",
+      "back": "پیچھے جائیں"
+    }
+  }

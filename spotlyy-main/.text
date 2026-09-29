@@ -1,0 +1,37 @@
+// import createMiddleware from "next-intl/middleware";
+// import { routing } from "./i18n/routing";
+
+// export default createMiddleware(routing);
+
+// export const config = {
+//   // Match all pathnames except for
+//   // - … if they start with `/api`, `/trpc`, `/_next` or `/_vercel`
+//   // - … the ones containing a dot (e.g. `favicon.ico`)
+//   matcher: "/((?!api|trpc|_next|_vercel|.*\\..*).*)",
+// };
+
+import { NextRequest, NextResponse, NextFetchEvent } from "next/server";
+
+import { getCloudflareContext } from "@opennextjs/cloudflare";
+
+export function middleware(request: NextRequest, event: NextFetchEvent) {
+  console.log("middleware");
+
+  const requestHeaders = new Headers(request.headers);
+  const cloudflareContext = getCloudflareContext();
+
+  requestHeaders.set(
+    "x-cloudflare-context",
+    `typeof \`cloudflareContext.env\` = ${typeof cloudflareContext.env}`
+  );
+
+  return NextResponse.next({
+    request: {
+      headers: requestHeaders,
+    },
+  });
+}
+
+export const config = {
+  matcher: ["/((?!api|trpc|_next|_vercel|.*\\..*).*)"],
+};
